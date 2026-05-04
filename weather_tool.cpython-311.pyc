@@ -1,0 +1,127 @@
+"""
+currency_tool.py
+FreshMart Currency Converter Tool
+
+Converts amounts between currencies using ExchangeRate-API.
+Requires EXCHANGE_API_KEY environment variable.
+
+Fixes the broken currency conversion seen in the original system.
+"""
+
+import os
+import httpx
+import logging
+
+logger = logging.getLogger(__name__)
+
+API_KEY  = os.getenv("EXCHANGE_API_KEY", "")
+BASE_URL = "https://v6.exchangerate-api.com/v6"
+
+TIMEOUT  = 8.0
+
+# Common currency codes for reference
+CURRENCY_CODES = {
+    "pkr": "PKR", "rupee": "PKR", "rupees": "PKR",
+    "usd": "USD", "dollar": "USD", "dollars": "USD",
+    "eur": "EUR", "euro": "EUR", "euros": "EUR",
+    "gbp": "GBP", "pound": "GBP", "pounds": "GBP",
+    "aed": "AED", "dirham": "AED",
+    "sar": "SAR", "riyal": "SAR",
+    "inr": "INR",
+}
+
+
+def _normalize_currency(code: str) -> str:
+    """Convert common currency names to ISO codes."""
+    return CURRENCY_CODES.get(code.lower().strip(), code.upper().strip())
+
+
+async def convert_currency(amount: float, from_currency: str, to_currency: str) -> dict:
+    """
+    Convert an amount from one currency to another.
+
+    Args:
+        amount:        Amount to convert (e.g. 10.50)
+        from_currency: Source currency code or name (e.g. "USD", "dollar")
+        to_currency:   Target currency code or name (e.g. "PKR", "rupees")
+
+    Returns:
+        dict with converted amount and exchange rate.
+    """
+    if amount <= 0:
+        return {"error": "Amount must be greater than zero"}
+
+    from_code = _normalize_currency(from_currency)
+    to_code   = _normalize_currency(to_currency)
+
+    if not API_KEY:
+        # Fallback with approximate hardcoded rates if no API key
+        fallback_rates = {
+            ("USD", "PKR"): 278.5,
+            ("PKR", "USD"): 0.0036,
+            ("USD", "EUR"): 0.92,
+            ("EUR", "USD"): 1.09,
+            ("USD", "GBP"): 0.79,
+            ("GBP", "USD"): 1.27,
+            ("USD", "AED"): 3.67,
+            ("USD", "SAR"): 3.75,
+            ("USD", "INR"): 83.5,
+        }
+        rate = fallback_rates.get((from_code, to_code))
+        if rate:
+            converted = round(amount * rate, 2)
+            return {
+                "status":        "ok",
+                "amount":        amount,
+                "from_currency": from_code,
+                "to_currency":   to_code,
+                "exchange_rate": rate,
+                "converted":     converted,
+                "note":          "Using approximate rate (API key not configured)"
+            }
+        return {
+            "error": "Exchange API key not configured. Set EXCHANGE_API_KEY environment variable.",
+            "hint":  "Sign up free at exchangerate-api.com"
+        }
+
+    try:
+        url = f"{BASE_URL}/{API_KEY}/pair/{from_code}/{to_code}/{amount}"
+        async with httpx.AsyncClient(timeout=TIMEOUT) as client:
+            resp = await client.get(url)
+
+        if resp.status_code != 200:
+            return {"error": f"Currency service error (HTTP {resp.status_code})."}
+
+        data = resp.json()
+        if data.get("result") != "success":
+            return {"error": data.get("error-type", "Unknown currency conversion error")}
+
+        return {
+            "status":        "ok",
+            "amount":        amount,
+            "from_currency": from_code,
+            "to_currency":   to_code,
+            "exchange_rate": round(data.get("conversion_rate", 0), 4),
+            "converted":     round(data.get("conversion_result", 0), 2)
+        }
+
+    except httpx.TimeoutException:
+        return {"error": "Currency service timed out. Please try again."}
+    except Exception as e:
+        logger.error(f"[Currency] Error: {e}")
+        return {"error": f"Could not convert currency: {str(e)}"}
+
+
+CURRENCY_TOOL_SCHEMA = {
+    "name": "convert_currency",
+    "description": (
+        "Convert an amount from one currency to another. Call this when the user asks "
+        "to convert prices or the cart total to a different currency like PKR, EUR, or GBP."
+    ),
+    "parameters": {
+        "amount":        {"type": "number", "description": "Amount to convert, e.g. 15.50"},
+        "from_currency": {"type": "string", "description": "Source currency, e.g. 'USD' or 'dollar'"},
+        "to_currency":   {"type": "string", "description": "Target currency, e.g. 'PKR' or 'rupees'"}
+    },
+    "required": ["amount", "from_currency", "to_currency"]
+}

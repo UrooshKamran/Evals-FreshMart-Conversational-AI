@@ -1,0 +1,95 @@
+"""
+weather_tool.py
+FreshMart Weather Tool
+
+Fetches current weather for a given city using Visual Crossing Weather API.
+Requires WEATHER_API_KEY environment variable.
+
+API docs: https://www.visualcrossing.com/resources/documentation/weather-api/timeline-weather-api/
+Endpoint: https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/{city}/today
+"""
+
+import os
+import httpx
+import logging
+
+logger = logging.getLogger(__name__)
+
+API_KEY  = os.getenv("WEATHER_API_KEY", "")
+BASE_URL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline"
+TIMEOUT  = 8.0
+
+
+async def get_weather(city: str) -> dict:
+    """
+    Get current weather for a city using Visual Crossing API.
+    Args:
+        city: City name (e.g. "Rawalpindi", "London")
+    Returns:
+        dict with weather info or error message.
+    """
+    if not city or not city.strip():
+        return {"error": "City name is required"}
+
+    if not API_KEY:
+        return {
+            "error": "Weather API key not configured.",
+            "hint": "Set the WEATHER_API_KEY environment variable."
+        }
+
+    # Visual Crossing timeline endpoint: /city/today
+    url = f"{BASE_URL}/{city.strip()}/today"
+    params = {
+        "unitGroup": "metric",       # Celsius
+        "key": API_KEY,
+        "contentType": "json",
+        "include": "current",        # Only fetch current conditions
+    }
+
+    try:
+        async with httpx.AsyncClient(timeout=TIMEOUT) as client:
+            resp = await client.get(url, params=params)
+
+        if resp.status_code == 400:
+            return {"error": f"City '{city}' not found. Please check the spelling."}
+        if resp.status_code == 401:
+            return {"error": "Invalid Weather API key. Please check configuration."}
+        if resp.status_code != 200:
+            return {"error": f"Weather service error (HTTP {resp.status_code})."}
+
+        data = resp.json()
+
+        # Visual Crossing response structure:
+        # data["currentConditions"] holds live weather
+        current = data.get("currentConditions", {})
+
+        return {
+            "status":      "ok",
+            "city":        data.get("resolvedAddress", city),
+            "condition":   current.get("conditions", "Unknown"),
+            "description": current.get("conditions", "").capitalize(),
+            "temperature": round(current.get("temp", 0), 1),
+            "feels_like":  round(current.get("feelslike", 0), 1),
+            "humidity":    round(current.get("humidity", 0), 1),
+            "wind_speed":  round(current.get("windspeed", 0), 1),
+            "unit":        "Celsius"
+        }
+
+    except httpx.TimeoutException:
+        return {"error": "Weather service timed out. Please try again."}
+    except Exception as e:
+        logger.error(f"[Weather] Error: {e}")
+        return {"error": f"Could not fetch weather: {str(e)}"}
+
+
+WEATHER_TOOL_SCHEMA = {
+    "name": "get_weather",
+    "description": (
+        "Get the current weather for a city. Call this when the user asks about "
+        "weather, temperature, or if conditions are good for outdoor activities or BBQ."
+    ),
+    "parameters": {
+        "city": {"type": "string", "description": "City name, e.g. 'Rawalpindi' or 'London'"}
+    },
+    "required": ["city"]
+}

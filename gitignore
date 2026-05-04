@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Environment variables
+.env
+*.env
+
+# Piper voice model files (large binary files — download via setup.sh)
+voices/*.onnx
+voices/*.onnx.json
+
+# Whisper model cache (downloaded automatically by faster-whisper)
+~/.cache/huggingface/
+*.pt
+*.bin
+
+# Docker
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Screenshots (add your own)
+screenshots/

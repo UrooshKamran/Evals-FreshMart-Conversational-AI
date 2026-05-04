@@ -1,0 +1,100 @@
+[
+  {
+    "id": "T01",
+    "tool": "calculate",
+    "utterance": "What is 3 times 2.50 plus 1.80?",
+    "expected_tool": "calculate",
+    "expected_args_contain": {"expression": ["3", "2.50", "1.80"]},
+    "expected_result_key": "result"
+  },
+  {
+    "id": "T02",
+    "tool": "calculate",
+    "utterance": "How much is 5 kg of tomatoes at $0.80 per kg?",
+    "expected_tool": "calculate",
+    "expected_args_contain": {"expression": ["5", "0.80"]},
+    "expected_result_key": "result"
+  },
+  {
+    "id": "T03",
+    "tool": "calculate",
+    "utterance": "Calculate 15% discount on $45",
+    "expected_tool": "calculate",
+    "expected_args_contain": {"expression": ["45", "15"]},
+    "expected_result_key": "result"
+  },
+  {
+    "id": "T04",
+    "tool": "get_weather",
+    "utterance": "What is the weather in Rawalpindi?",
+    "expected_tool": "get_weather",
+    "expected_args_contain": {"city": ["rawalpindi"]},
+    "expected_result_key": "temperature"
+  },
+  {
+    "id": "T05",
+    "tool": "get_weather",
+    "utterance": "Is it raining in Lahore today?",
+    "expected_tool": "get_weather",
+    "expected_args_contain": {"city": ["lahore"]},
+    "expected_result_key": "condition"
+  },
+  {
+    "id": "T06",
+    "tool": "convert_currency",
+    "utterance": "Convert $20 to Pakistani Rupees",
+    "expected_tool": "convert_currency",
+    "expected_args_contain": {"from_currency": ["usd", "dollar"], "to_currency": ["pkr", "rupee"]},
+    "expected_result_key": "converted"
+  },
+  {
+    "id": "T07",
+    "tool": "convert_currency",
+    "utterance": "How much is 500 PKR in euros?",
+    "expected_tool": "convert_currency",
+    "expected_args_contain": {"from_currency": ["pkr"], "to_currency": ["eur", "euro"]},
+    "expected_result_key": "converted"
+  },
+  {
+    "id": "T08",
+    "tool": "update_user_info",
+    "utterance": "My name is Ahmed",
+    "expected_tool": "update_user_info",
+    "expected_args_contain": {"field": ["name"], "value": ["ahmed"]},
+    "expected_result_key": "status"
+  },
+  {
+    "id": "T09",
+    "tool": "update_user_info",
+    "utterance": "My phone number is 0300-1234567",
+    "expected_tool": "update_user_info",
+    "expected_args_contain": {"field": ["phone"]},
+    "expected_result_key": "status"
+  },
+  {
+    "id": "T10",
+    "tool": "get_user_info",
+    "utterance": "Do you remember my name?",
+    "expected_tool": "get_user_info",
+    "expected_args_contain": {},
+    "expected_result_key": "status"
+  },
+  {
+    "id": "T11_negative",
+    "tool": "none",
+    "utterance": "Hello, how are you?",
+    "expected_tool": "none",
+    "expected_args_contain": {},
+    "expected_result_key": null,
+    "note": "Greeting should NOT trigger any tool call"
+  },
+  {
+    "id": "T12_negative",
+    "tool": "none",
+    "utterance": "What fruits do you have?",
+    "expected_tool": "none",
+    "expected_args_contain": {},
+    "expected_result_key": null,
+    "note": "RAG query should NOT trigger tool calls"
+  }
+]

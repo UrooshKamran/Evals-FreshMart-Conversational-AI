@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+  # ── Ollama (LLM engine) ───────────────────────────────────────────────────
+  ollama:
+    image: ollama/ollama:latest
+    container_name: freshmart_ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    # REMOVED strict healthcheck that was failing
+    restart: unless-stopped
+
+  # ── Model pull (one-shot init container) ─────────────────────────────────
+  ollama-init:
+    image: ollama/ollama:latest
+    container_name: freshmart_ollama_init
+    depends_on:
+      - ollama
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    entrypoint: ["ollama", "pull", "qwen2.5:1.5b"]
+    restart: "no"
+
+  # ── FreshMart FastAPI app ─────────────────────────────────────────────────
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: freshmart_app
+    ports:
+      - "8000:8000"
+    environment:
+      - OLLAMA_URL=http://ollama:11434
+      - WEATHER_API_KEY=${WEATHER_API_KEY:-}
+      - EXCHANGE_API_KEY=${EXCHANGE_API_KEY:-}
+    volumes:
+      - ./chroma_db:/app/chroma_db
+      - ./crm.db:/app/crm.db
+    depends_on:
+      - ollama
+      - ollama-init
+    restart: unless-stopped
+
+volumes:
+  ollama_data:

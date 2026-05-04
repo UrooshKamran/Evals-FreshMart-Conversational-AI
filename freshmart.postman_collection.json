@@ -1,0 +1,62 @@
+{
+  "info": {
+    "name": "FreshMart Conversational AI API",
+    "description": "Phase IV - Postman test collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    { "key": "base_url", "value": "http://localhost:8000" },
+    { "key": "session_id", "value": "" }
+  ],
+  "item": [
+    {
+      "name": "1. Health Check",
+      "request": { "method": "GET", "url": "{{base_url}}/health" },
+      "event": [{ "listen": "test", "script": { "exec": [
+        "pm.test('Status 200', () => pm.response.to.have.status(200));",
+        "pm.test('ok', () => pm.expect(pm.response.json().status).to.eql('ok'));"
+      ]}}]
+    },
+    {
+      "name": "2. Create New Session",
+      "request": { "method": "POST", "url": "{{base_url}}/session/new" },
+      "event": [{ "listen": "test", "script": { "exec": [
+        "pm.test('Status 200', () => pm.response.to.have.status(200));",
+        "const json = pm.response.json();",
+        "pm.collectionVariables.set('session_id', json.session_id);",
+        "pm.test('session_id returned', () => pm.expect(json.session_id).to.be.a('string'));"
+      ]}}]
+    },
+    {
+      "name": "3. Get Session State",
+      "request": { "method": "GET", "url": "{{base_url}}/session/{{session_id}}/state" },
+      "event": [{ "listen": "test", "script": { "exec": [
+        "pm.test('Status 200', () => pm.response.to.have.status(200));",
+        "pm.test('cart exists', () => pm.expect(pm.response.json().cart).to.be.an('object'));"
+      ]}}]
+    },
+    {
+      "name": "4. Reset Session",
+      "request": { "method": "POST", "url": "{{base_url}}/session/reset/{{session_id}}" },
+      "event": [{ "listen": "test", "script": { "exec": [
+        "pm.test('Status 200', () => pm.response.to.have.status(200));",
+        "pm.test('reset', () => pm.expect(pm.response.json().status).to.eql('reset'));"
+      ]}}]
+    },
+    {
+      "name": "5. Session Not Found (404)",
+      "request": { "method": "GET", "url": "{{base_url}}/session/invalid-id-999/state" },
+      "event": [{ "listen": "test", "script": { "exec": [
+        "pm.test('Status 404', () => pm.response.to.have.status(404));"
+      ]}}]
+    },
+    {
+      "name": "6. Delete Session",
+      "request": { "method": "DELETE", "url": "{{base_url}}/session/{{session_id}}" },
+      "event": [{ "listen": "test", "script": { "exec": [
+        "pm.test('Status 200', () => pm.response.to.have.status(200));",
+        "pm.test('deleted', () => pm.expect(pm.response.json().status).to.eql('deleted'));"
+      ]}}]
+    }
+  ]
+}
