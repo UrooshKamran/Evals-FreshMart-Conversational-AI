@@ -1,0 +1,29 @@
+FreshMart Snacks Catalog
+
+FreshMart offers a variety of snacks for every craving and occasion.
+
+Salted Chips (150g) — $1.50
+Classic potato chips with sea salt. Crispy and satisfying. Perfect for snacking.
+
+Mixed Nuts (200g) — $4.50
+Premium mix of almonds, cashews, walnuts, and pistachios. Unsalted. High in healthy fats and protein.
+
+Dark Chocolate Bar (100g) — $2.80
+70% dark chocolate. Rich and intense flavor. High in antioxidants and magnesium.
+
+Granola Bar (pack of 5) — $3.20
+Oat-based granola bars with honey and nuts. Great for on-the-go energy. No artificial sweeteners.
+
+Popcorn (microwave, 3 pack) — $2.50
+Butter-flavored microwave popcorn. Easy to prepare. Great for movie nights.
+
+Rice Crackers (150g) — $1.80
+Light and crispy rice crackers. Low calorie. Great with dips or on their own.
+
+Gummy Bears (200g) — $2.00
+Classic fruit-flavored gummy bears. Chewy and sweet. Great for kids and adults.
+
+Pretzels (200g) — $2.20
+Salted pretzel twists. Crunchy and satisfying. Great for dipping in hummus or cheese.
+
+Snack Bundle Deal: Salted Chips + Popcorn + Gummy Bears = $5.50 (save $0.70).

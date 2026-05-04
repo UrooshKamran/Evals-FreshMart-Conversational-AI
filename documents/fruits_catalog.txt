@@ -1,0 +1,29 @@
+FreshMart Fruits Catalog
+
+FreshMart offers a wide selection of fresh fruits sourced from local and international farms.
+
+Apple (1 kg) — $2.50
+Variety: Royal Gala and Fuji. Crisp, sweet, and perfect for snacking or baking. Rich in fiber and vitamin C. Stored at optimal temperature to ensure freshness.
+
+Banana (1 dozen) — $1.80
+Variety: Cavendish. Naturally ripened, rich in potassium and energy. Great for smoothies, baking, or eating as a snack.
+
+Mango (1 kg) — $3.50
+Variety: Sindhri and Chaunsa during season. Sweet, juicy, and aromatic. High in vitamins A and C. Available year-round through international sourcing.
+
+Strawberry (250g punnet) — $2.20
+Fresh, hand-picked strawberries. Rich in antioxidants. Perfect for desserts, smoothies, or eating fresh.
+
+Watermelon (whole) — $5.00
+Large, seedless watermelon. Approximately 5-7 kg. Hydrating and refreshing. Perfect for summer.
+
+Grapes (500g) — $2.80
+Seedless green or red grapes. Sweet and juicy. Rich in resveratrol and antioxidants.
+
+Orange (1 kg) — $2.00
+Navel oranges. Juicy and high in vitamin C. Great for juicing or eating fresh.
+
+Pineapple (whole) — $3.00
+Tropical pineapple, approximately 1.5 kg. Sweet with slight tartness. Rich in bromelain enzyme.
+
+All fruits are inspected for quality before dispatch. If any fruit arrives damaged, contact support within 24 hours for a full replacement.

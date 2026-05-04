@@ -1,0 +1,29 @@
+FreshMart Beverages Catalog
+
+FreshMart stocks a wide range of beverages including water, juices, teas, and soft drinks.
+
+Mineral Water (1.5L) — $0.90
+Still mineral water. Refreshing and pure. Sourced from natural springs.
+
+Orange Juice (1L, fresh) — $2.50
+Freshly squeezed orange juice. No added sugar or preservatives. High in vitamin C.
+
+Apple Juice (1L) — $2.20
+Cold-pressed apple juice. Natural sweetness. No artificial colors or flavors.
+
+Green Tea (20 bags) — $3.00
+Premium green tea bags. Rich in antioxidants. Calming and refreshing.
+
+Coffee (200g, ground) — $5.50
+Medium roast ground coffee. Rich aroma and smooth flavor. Suitable for all brewing methods.
+
+Coca-Cola (1.5L) — $1.80
+Classic Coca-Cola. Ice cold fizzy drink. Great for parties and meals.
+
+Sparkling Water (1L) — $1.20
+Carbonated mineral water. Refreshing and zero calories. Great alternative to soda.
+
+Almond Milk (1L) — $3.20
+Unsweetened almond milk. Dairy-free alternative. Rich in vitamin E. Suitable for vegans.
+
+All beverages are stored at appropriate temperatures. Chilled beverages are packed with ice packs for delivery.

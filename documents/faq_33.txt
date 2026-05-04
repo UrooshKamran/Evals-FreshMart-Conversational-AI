@@ -1,0 +1,7 @@
+FreshMart Frequently Asked Questions - Part 33
+
+Q: Does FreshMart offer gift cards?
+A: Yes! FreshMart gift cards are available in denominations of 0, 5, 0, and 00. They can be purchased online and redeemed at checkout. Gift cards are valid for 12 months.
+
+Q: Can I use a gift card and a promo code together?
+A: Yes. Gift cards and promo codes can both be applied to the same order. The gift card balance is deducted first, then the promo code discount.

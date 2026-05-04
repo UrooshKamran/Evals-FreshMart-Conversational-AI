@@ -1,0 +1,7 @@
+FreshMart Frequently Asked Questions - Part 7
+
+Q: What payment methods does FreshMart accept?
+A: FreshMart accepts Visa and Mastercard credit and debit cards, PayPal, and Cash on Delivery for orders up to 00. Cheques and cryptocurrency are not accepted.
+
+Q: Is it safe to save my card details?
+A: Yes. FreshMart uses 256-bit SSL encryption and tokenizes saved card details. Your full card number is never stored on our servers.

@@ -1,0 +1,7 @@
+FreshMart Frequently Asked Questions - Part 8
+
+Q: How do I apply a promo code?
+A: Enter your promo code in the promo code field at checkout. The discount will be applied automatically. If the code is not working, check the expiry date or contact support.
+
+Q: Can I use multiple promo codes?
+A: Only one promo code can be used per order. However, automatic promotions like the 15% order discount are applied on top of promo codes.

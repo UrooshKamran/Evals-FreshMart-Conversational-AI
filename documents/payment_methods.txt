@@ -1,0 +1,24 @@
+FreshMart Payment Methods
+
+Accepted Payment Methods:
+- Visa and Mastercard credit cards
+- Visa and Mastercard debit cards
+- PayPal
+- Cash on Delivery (COD)
+
+Not Accepted:
+- Personal or business cheques
+- Cryptocurrency
+- Wire transfers
+
+Cash on Delivery:
+COD is available for orders up to $100. The delivery driver carries change for amounts up to $150. For larger orders, please use an electronic payment method.
+
+Payment Security:
+All online payments are processed through our secure payment gateway with 256-bit SSL encryption. FreshMart does not store your full card details on our servers.
+
+Saving Payment Methods:
+You can save up to 3 payment methods in your FreshMart account for faster checkout. Saved cards are tokenized for security.
+
+Invoice and Receipts:
+A digital receipt is emailed to you after every order. You can also download invoices from your account order history.

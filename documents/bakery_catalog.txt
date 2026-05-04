@@ -1,0 +1,29 @@
+FreshMart Bakery Catalog
+
+FreshMart partners with local artisan bakeries to bring you fresh-baked goods delivered daily.
+
+White Bread (loaf) — $1.50
+Soft white sandwich bread, 600g loaf. Freshly baked daily. Best consumed within 3 days.
+
+Whole Wheat Bread (loaf) — $2.00
+Nutritious whole wheat bread, 600g loaf. High in fiber and complex carbohydrates.
+
+Croissant (each) — $1.20
+Buttery, flaky croissant. Baked fresh every morning. Best enjoyed warm.
+
+Sourdough Bread (loaf) — $3.50
+Artisan sourdough with tangy flavor and chewy crust. Made with natural starter. 700g loaf.
+
+Bagel (pack of 4) — $2.80
+Classic plain bagels. Dense and chewy. Great with cream cheese or as sandwich bread.
+
+Dinner Rolls (pack of 6) — $2.20
+Soft, pillowy dinner rolls. Perfect for meals or mini sandwiches.
+
+Blueberry Muffin (each) — $1.80
+Large blueberry muffin with real blueberries. Moist and sweet. Baked fresh daily.
+
+Cinnamon Roll (each) — $2.00
+Soft cinnamon roll with cream cheese frosting. Warm and indulgent.
+
+Bakery Promotion: Buy 2 bakery items, get 1 free (cheapest item free). All bakery items are baked fresh and delivered the same day.

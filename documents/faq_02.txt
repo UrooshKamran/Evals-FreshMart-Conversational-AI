@@ -1,0 +1,7 @@
+FreshMart Frequently Asked Questions - Part 2
+
+Q: What is the minimum order value?
+A: There is no minimum order value at FreshMart. However, orders below 5 will incur a .00 delivery fee. Orders above 5 receive free delivery.
+
+Q: Can I schedule a delivery in advance?
+A: Yes, you can schedule deliveries up to 7 days in advance by selecting your preferred date and time slot at checkout.

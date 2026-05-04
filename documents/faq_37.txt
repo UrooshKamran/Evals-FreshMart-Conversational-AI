@@ -1,0 +1,7 @@
+FreshMart Frequently Asked Questions - Part 37
+
+Q: How do I know if a product is out of stock?
+A: Out of stock items will be clearly marked on the FreshMart website and app. Shabo will inform you if a requested item is unavailable and suggest alternatives.
+
+Q: What happens if an item I ordered becomes unavailable?
+A: If an item becomes unavailable after you place your order, FreshMart will contact you to offer a substitute or a refund for that item.

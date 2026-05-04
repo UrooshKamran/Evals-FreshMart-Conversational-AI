@@ -1,0 +1,29 @@
+FreshMart Dairy Products Catalog
+
+FreshMart offers a comprehensive range of fresh dairy products from trusted local dairies.
+
+Full Cream Milk (1L) — $1.80
+Whole milk with 3.5% fat content. Pasteurized and homogenized. Rich and creamy taste.
+
+Skimmed Milk (1L) — $1.70
+Low-fat milk with less than 0.5% fat. Same nutritional benefits as whole milk but lower in calories.
+
+Cheddar Cheese (200g) — $3.20
+Mature cheddar cheese. Sharp, tangy flavor. Great for sandwiches, cooking, and snacking.
+
+Mozzarella Cheese (200g) — $3.50
+Fresh mozzarella. Soft and milky. Perfect for pizzas, salads, and pasta dishes.
+
+Greek Yogurt (500g) — $2.80
+Thick, creamy Greek yogurt. High in protein. Plain flavor. Great for breakfast or cooking.
+
+Butter (250g) — $2.50
+Unsalted butter. Made from fresh cream. Ideal for baking, cooking, and spreading.
+
+Cream Cheese (150g) — $2.20
+Smooth and spreadable cream cheese. Great for bagels, dips, and cheesecakes.
+
+Sour Cream (250ml) — $1.90
+Fresh sour cream with tangy flavor. Perfect for dips, baked potatoes, and Mexican dishes.
+
+All dairy products are kept refrigerated throughout storage and delivery. Check expiry dates on packaging.

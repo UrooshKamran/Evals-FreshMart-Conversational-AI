@@ -1,0 +1,7 @@
+FreshMart Frequently Asked Questions - Part 46
+
+Q: Can I set up a recurring order?
+A: Yes! FreshMart offers a subscription feature where you can set up weekly or bi-weekly recurring orders. Subscribers receive 5% off every order. Set up your subscription in your account settings.
+
+Q: Can I pause or cancel my subscription?
+A: Yes, you can pause or cancel your subscription at any time from your account settings with no penalty. Changes must be made at least 24 hours before the next scheduled delivery.

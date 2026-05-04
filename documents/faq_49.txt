@@ -1,0 +1,7 @@
+FreshMart Frequently Asked Questions - Part 49
+
+Q: Is FreshMart's website secure?
+A: Yes. FreshMart uses HTTPS with 256-bit SSL encryption on all pages. Payment data is processed through a PCI-DSS compliant payment gateway. We undergo regular security audits.
+
+Q: Does FreshMart share my data with third parties?
+A: FreshMart does not sell customer data to third parties. We may share data with delivery partners and payment processors as required to complete your order. See our Privacy Policy for full details.

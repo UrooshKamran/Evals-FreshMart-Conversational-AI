@@ -1,0 +1,23 @@
+FreshMart Delivery Policy
+
+Delivery Slots:
+- Morning slot: 9am to 12pm
+- Afternoon slot: 1pm to 5pm
+- Evening slot: 6pm to 9pm
+
+Delivery Fees:
+- Standard delivery fee: $3.00
+- Free delivery on all orders above $25.00
+- Express delivery (within 2 hours): $7.00 additional charge
+
+Same-Day Delivery:
+Orders placed before 2:00pm are eligible for same-day delivery. Orders placed after 2:00pm will be delivered the next day unless express delivery is selected.
+
+Delivery Coverage:
+FreshMart delivers to all residential zones within city limits. We do not currently deliver to PO boxes or industrial areas.
+
+Delivery Tracking:
+Once your order is dispatched, you will receive an SMS and email with a tracking link. You can also track your order through the FreshMart app or website.
+
+Failed Deliveries:
+If no one is available to receive the order, the delivery driver will leave it in a safe place if instructed. Otherwise, a redelivery will be attempted the next day at no extra charge.

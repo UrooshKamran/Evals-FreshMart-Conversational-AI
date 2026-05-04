@@ -1,0 +1,30 @@
+FreshMart How to Order Guide
+
+Placing an Order with Shabo (FreshMart Virtual Assistant):
+
+Step 1 - Browse Products:
+Ask Shabo what products are available. You can ask by category (e.g. "What fruits do you have?") or by product name (e.g. "Do you have mozzarella?").
+
+Step 2 - Add to Cart:
+Tell Shabo what you want to add. Examples:
+- "Add 2 apples to my cart"
+- "I want a loaf of sourdough bread"
+- "Put 3 bottles of mineral water in my cart"
+
+Step 3 - Review Cart:
+Ask Shabo to show your cart at any time. Example: "What's in my cart?" or "Show me my order."
+
+Step 4 - Apply Promotions:
+Shabo automatically applies available promotions. You can ask "What deals are available?" to see current offers.
+
+Step 5 - Checkout:
+When ready, tell Shabo you want to checkout. Shabo will show you a full order summary including items, quantities, prices, promotions applied, delivery fee, and total.
+
+Step 6 - Confirm:
+Confirm your order and provide delivery slot preference (morning, afternoon, or evening).
+
+Modifying Your Order:
+You can add or remove items at any time before confirming. Example: "Remove the bananas" or "Add one more coffee."
+
+Cancelling an Order:
+Orders can be cancelled within 30 minutes of placement for a full refund.

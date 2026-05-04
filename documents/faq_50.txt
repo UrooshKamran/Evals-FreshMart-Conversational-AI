@@ -1,0 +1,7 @@
+FreshMart Frequently Asked Questions - Part 50
+
+Q: How do I delete my FreshMart account?
+A: To delete your account, go to Account Settings and select Delete Account. Your data will be permanently deleted within 30 days in accordance with data protection laws. Outstanding orders will still be fulfilled.
+
+Q: Can I have multiple FreshMart accounts?
+A: FreshMart allows one account per email address. If you need a separate account for business purchases, use a different email address or set up a corporate account.
