@@ -1,0 +1,884 @@
+[
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 3,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": 0.009,
+      "median": 0.009,
+      "p90": 0.009,
+      "p99": 0.009,
+      "min": 0.009,
+      "max": 0.009,
+      "count": 3
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": 0.01,
+      "median": 0.01,
+      "p90": 0.01,
+      "p99": 0.01,
+      "min": 0.009,
+      "max": 0.01,
+      "count": 3
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": 0.011,
+      "median": 0.011,
+      "p90": 0.012,
+      "p99": 0.012,
+      "min": 0.01,
+      "max": 0.012,
+      "count": 3
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": 0.011,
+      "median": 0.01,
+      "p90": 0.015,
+      "p99": 0.015,
+      "min": 0.009,
+      "max": 0.015,
+      "count": 3
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": 0.007,
+      "median": 0.007,
+      "p90": 0.008,
+      "p99": 0.008,
+      "min": 0.006,
+      "max": 0.008,
+      "count": 3
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": 0.007,
+      "median": 0.006,
+      "p90": 0.009,
+      "p99": 0.009,
+      "min": 0.006,
+      "max": 0.009,
+      "count": 3
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": 0.014,
+      "median": 0.016,
+      "p90": 0.017,
+      "p99": 0.017,
+      "min": 0.009,
+      "max": 0.017,
+      "count": 3
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": 0.007,
+      "median": 0.007,
+      "p90": 0.007,
+      "p99": 0.007,
+      "min": 0.006,
+      "max": 0.007,
+      "count": 3
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": 0.008,
+      "median": 0.008,
+      "p90": 0.008,
+      "p99": 0.008,
+      "min": 0.007,
+      "max": 0.008,
+      "count": 3
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": 0.004,
+      "median": 0.004,
+      "p90": 0.005,
+      "p99": 0.005,
+      "min": 0.004,
+      "max": 0.005,
+      "count": 3
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": 0.003,
+      "median": 0.003,
+      "p90": 0.003,
+      "p99": 0.003,
+      "min": 0.003,
+      "max": 0.003,
+      "count": 3
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": null,
+      "median": null,
+      "p90": null,
+      "p99": null
+    },
+    "e2e_stats": {
+      "mean": 0.003,
+      "median": 0.003,
+      "p90": 0.004,
+      "p99": 0.004,
+      "min": 0.003,
+      "max": 0.004,
+      "count": 3
+    },
+    "avg_tokens": 0
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": 17.277,
+      "median": 0.356,
+      "p90": 51.135,
+      "p99": 51.135,
+      "min": 0.339,
+      "max": 51.135,
+      "count": 3
+    },
+    "e2e_stats": {
+      "mean": 19.602,
+      "median": 2.816,
+      "p90": 53.306,
+      "p99": 53.306,
+      "min": 2.685,
+      "max": 53.306,
+      "count": 3
+    },
+    "avg_tokens": 25
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": 0.527,
+      "median": 0.366,
+      "p90": 0.901,
+      "p99": 0.901,
+      "min": 0.315,
+      "max": 0.901,
+      "count": 3
+    },
+    "e2e_stats": {
+      "mean": 9.04,
+      "median": 10.64,
+      "p90": 10.79,
+      "p99": 10.79,
+      "min": 5.69,
+      "max": 10.79,
+      "count": 3
+    },
+    "avg_tokens": 88.7
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": 1.519,
+      "median": 0.518,
+      "p90": 3.686,
+      "p99": 3.686,
+      "min": 0.354,
+      "max": 3.686,
+      "count": 3
+    },
+    "e2e_stats": {
+      "mean": 4.514,
+      "median": 4.342,
+      "p90": 7.127,
+      "p99": 7.127,
+      "min": 2.073,
+      "max": 7.127,
+      "count": 3
+    },
+    "avg_tokens": 33.3
+  },
+  {
+    "scenario": "simple",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": 31.397,
+      "median": 5.718,
+      "p90": 84.172,
+      "p99": 84.172,
+      "min": 4.3,
+      "max": 84.172,
+      "count": 3
+    },
+    "e2e_stats": {
+      "mean": 34.071,
+      "median": 8.671,
+      "p90": 86.878,
+      "p99": 86.878,
+      "min": 6.663,
+      "max": 86.878,
+      "count": 3
+    },
+    "avg_tokens": 27
+  },
+  {
+    "scenario": "rag_only",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": 12.546,
+      "median": 14.07,
+      "p90": 14.537,
+      "p99": 14.537,
+      "min": 9.031,
+      "max": 14.537,
+      "count": 3
+    },
+    "e2e_stats": {
+      "mean": 21.981,
+      "median": 25.039,
+      "p90": 26.851,
+      "p99": 26.851,
+      "min": 14.054,
+      "max": 26.851,
+      "count": 3
+    },
+    "avg_tokens": 90
+  },
+  {
+    "scenario": "tool_only",
+    "trials": 3,
+    "errors": 0,
+    "ttft_stats": {
+      "mean": 11.027,
+      "median": 10.737,
+      "p90": 14.356,
+      "p99": 14.356,
+      "min": 7.989,
+      "max": 14.356,
+      "count": 3
+    },
+    "e2e_stats": {
+      "mean": 20.552,
+      "median": 14.756,
+      "p90": 32.987,
+      "p99": 32.987,
+      "min": 13.914,
+      "max": 32.987,
+      "count": 3
+    },
+    "avg_tokens": 83
+  }
+]

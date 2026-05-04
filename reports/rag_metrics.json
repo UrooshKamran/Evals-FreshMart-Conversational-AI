@@ -1,0 +1,11 @@
+{
+  "avg_precision_at_k": 0.344,
+  "avg_recall_at_k": 0.883,
+  "avg_similarity_score": 0.503,
+  "top_k": 3,
+  "num_queries": 30,
+  "avg_faithfulness_score": 0.9,
+  "faithfulness_rate_50pct": 0.967,
+  "num_qa_pairs": 30,
+  "avg_context_relevance": 0.811
+}

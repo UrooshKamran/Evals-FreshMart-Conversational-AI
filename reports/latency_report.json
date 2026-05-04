@@ -1,0 +1,154 @@
+{
+  "hardware": {
+    "os": "Windows 11",
+    "cpu_cores": 8,
+    "ram_gb": 15.8,
+    "disk_gb": 20.0,
+    "python": "3.14.3",
+    "model": "qwen2.5:1.5b (CPU quantised)"
+  },
+  "trials_per_scenario": 3,
+  "scenarios": {
+    "simple": {
+      "scenario": "simple",
+      "description": "Simple greeting \u2014 no RAG, no tool",
+      "trials": 3,
+      "errors": 0,
+      "error_rate": 0.0,
+      "ttft_stats": {
+        "mean": 71.928,
+        "median": 69.259,
+        "p90": 78.079,
+        "p99": 78.079,
+        "min": 68.445,
+        "max": 78.079,
+        "count": 3
+      },
+      "e2e_stats": {
+        "mean": 74.381,
+        "median": 72.689,
+        "p90": 80.192,
+        "p99": 80.192,
+        "min": 70.261,
+        "max": 80.192,
+        "count": 3
+      },
+      "inter_token_stats": {
+        "mean": 0.091,
+        "median": 0.089,
+        "p90": 0.107,
+        "p99": 0.137,
+        "min": 0.08,
+        "max": 0.137,
+        "count": 79
+      },
+      "avg_tokens": 27.3
+    },
+    "rag_only": {
+      "scenario": "rag_only",
+      "description": "RAG retrieval required",
+      "trials": 3,
+      "errors": 0,
+      "error_rate": 0.0,
+      "ttft_stats": {
+        "mean": 89.072,
+        "median": 93.586,
+        "p90": 93.704,
+        "p99": 93.704,
+        "min": 79.925,
+        "max": 93.704,
+        "count": 3
+      },
+      "e2e_stats": {
+        "mean": 97.212,
+        "median": 102.197,
+        "p90": 103.348,
+        "p99": 103.348,
+        "min": 86.091,
+        "max": 103.348,
+        "count": 3
+      },
+      "inter_token_stats": {
+        "mean": 0.107,
+        "median": 0.087,
+        "p90": 0.122,
+        "p99": 0.335,
+        "min": 0.08,
+        "max": 0.479,
+        "count": 227
+      },
+      "avg_tokens": 76.7
+    },
+    "tool_only": {
+      "scenario": "tool_only",
+      "description": "Calculator tool call only",
+      "trials": 3,
+      "errors": 0,
+      "error_rate": 0.0,
+      "ttft_stats": {
+        "mean": 72.726,
+        "median": 71.906,
+        "p90": 74.813,
+        "p99": 74.813,
+        "min": 71.46,
+        "max": 74.813,
+        "count": 3
+      },
+      "e2e_stats": {
+        "mean": 76.681,
+        "median": 76.117,
+        "p90": 78.776,
+        "p99": 78.776,
+        "min": 75.149,
+        "max": 78.776,
+        "count": 3
+      },
+      "inter_token_stats": {
+        "mean": 0.085,
+        "median": 0.085,
+        "p90": 0.087,
+        "p99": 0.092,
+        "min": 0.08,
+        "max": 0.092,
+        "count": 139
+      },
+      "avg_tokens": 47.3
+    },
+    "mixed": {
+      "scenario": "mixed",
+      "description": "RAG retrieval + calculator tool",
+      "trials": 3,
+      "errors": 0,
+      "error_rate": 0.0,
+      "ttft_stats": {
+        "mean": 10.479,
+        "median": 10.054,
+        "p90": 11.831,
+        "p99": 11.831,
+        "min": 9.553,
+        "max": 11.831,
+        "count": 3
+      },
+      "e2e_stats": {
+        "mean": 15.449,
+        "median": 16.25,
+        "p90": 17.227,
+        "p99": 17.227,
+        "min": 12.871,
+        "max": 17.227,
+        "count": 3
+      },
+      "inter_token_stats": {
+        "mean": 0.086,
+        "median": 0.085,
+        "p90": 0.087,
+        "p99": 0.122,
+        "min": 0.081,
+        "max": 0.125,
+        "count": 173
+      },
+      "avg_tokens": 58.7
+    }
+  },
+  "comparison_table": "\n## Latency Comparison Table\n\n| Scenario | TTFT mean | TTFT p90 | E2E mean | E2E p90 | ITL mean | Errors |\n|---|---|---|---|---|---|---|\n| simple | 71.928s | 78.079s | 74.381s | 80.192s | 0.091s | 0/3 |\n| rag_only | 89.072s | 93.704s | 97.212s | 103.348s | 0.107s | 0/3 |\n| tool_only | 72.726s | 74.813s | 76.681s | 78.776s | 0.085s | 0/3 |\n| mixed | 10.479s | 11.831s | 15.449s | 17.227s | 0.086s | 0/3 |\n"
+}

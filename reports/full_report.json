@@ -1,0 +1,352 @@
+{
+  "generated_at": "2026-05-03T12:11:41.128801Z",
+  "hardware": {
+    "os": "Windows 11",
+    "python_version": "3.14.3",
+    "cpu": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+    "cpu_cores": 8,
+    "ram_total_gb": 17.0,
+    "ram_avail_gb": 5.2,
+    "timestamp": "2026-05-03T12:11:41.128801Z"
+  },
+  "suite_results": [
+    {
+      "label": "crm_unit_tests",
+      "returncode": 0,
+      "passed": true,
+      "elapsed_s": 1.66
+    },
+    {
+      "label": "calculator_unit_tests",
+      "returncode": 0,
+      "passed": true,
+      "elapsed_s": 0.91
+    },
+    {
+      "label": "tools_unit_tests",
+      "returncode": 0,
+      "passed": true,
+      "elapsed_s": 1.3
+    },
+    {
+      "label": "rag_evaluation",
+      "returncode": 0,
+      "passed": true,
+      "elapsed_s": 64.56
+    },
+    {
+      "label": "conversation_tests",
+      "returncode": 1,
+      "passed": false,
+      "elapsed_s": 228.34
+    },
+    {
+      "label": "latency_tests",
+      "returncode": 1,
+      "passed": false,
+      "elapsed_s": 121.28
+    },
+    {
+      "label": "throughput_tests",
+      "returncode": 1,
+      "passed": false,
+      "elapsed_s": 233.64
+    }
+  ],
+  "rag_metrics": {
+    "avg_precision_at_k": 0.344,
+    "avg_recall_at_k": 0.883,
+    "avg_similarity_score": 0.503,
+    "top_k": 3,
+    "num_queries": 30
+  },
+  "dialogue_results": {
+    "task_completion_rate": 1.0,
+    "policy_adherence_rate": 1.0,
+    "avg_llm_judge_score": 8.0,
+    "total_dialogues": 10,
+    "dialogues": [
+      {
+        "id": "D01",
+        "title": "Delivery hours inquiry",
+        "policy_type": "in_scope",
+        "task_completion_expected": true,
+        "success": true,
+        "llm_judge_score": 8,
+        "llm_judge_reasoning": "The response correctly mentioned morning delivery from 9am to 12pm and afternoon deliveries from 1pm to 4pm.",
+        "response_preview": "We deliver morning from 9am to 12pm and afternoon from 1pm to 5pm. Afternoon deliveries are only available until 4pm.\nI can only help with grocery sho"
+      },
+      {
+        "id": "D02",
+        "title": "Same-day delivery eligibility",
+        "policy_type": "in_scope",
+        "task_completion_expected": true,
+        "success": true,
+        "llm_judge_score": 8,
+        "llm_judge_reasoning": "The response correctly mentioned that same-day delivery is available for orders placed by 2pm.",
+        "response_preview": "Yes, you can get the same-day delivery for orders placed by 2pm. The fee will be $3.00 if ordered before then, and free above that time."
+      },
+      {
+        "id": "D03",
+        "title": "Product availability + price calculation",
+        "policy_type": "in_scope",
+        "task_completion_expected": true,
+        "success": true,
+        "llm_judge_score": 9,
+        "llm_judge_reasoning": "The chatbot response confirmed product availability and provided pricing information.",
+        "response_preview": "Yes, we do! Mango (1 kg) \u2014 $3.50. Would you like to add it to your cart?"
+      },
+      {
+        "id": "D04",
+        "title": "Return policy",
+        "policy_type": "in_scope",
+        "task_completion_expected": true,
+        "success": true,
+        "llm_judge_score": 8,
+        "llm_judge_reasoning": "The response correctly mentioned the return window (7-day) and provided both refund and replacement options.",
+        "response_preview": "I'm sorry to hear that you've had an issue with your purchase. Please check if the package was incorrectly shipped or returned to FreshMart as damaged"
+      },
+      {
+        "id": "D05",
+        "title": "User saves name via CRM",
+        "policy_type": "in_scope",
+        "task_completion_expected": true,
+        "success": true,
+        "llm_judge_score": 9,
+        "llm_judge_reasoning": "The chatbot acknowledged Zainab's name and confirmed it was saved.",
+        "response_preview": "Hello, Zainab! How can I assist you today at FreshMart?"
+      },
+      {
+        "id": "D06",
+        "title": "Weather query for grocery planning",
+        "policy_type": "in_scope",
+        "task_completion_expected": true,
+        "success": true,
+        "llm_judge_score": 8,
+        "llm_judge_reasoning": "The response correctly mentioned that the weather is clear in Rawalpindi today and provided temperature (32.8\u00b0C) which can be relevant to a grocery or delivery context.",
+        "response_preview": "The weather in Rawalpindi today is clear with a temperature of 32.8\u00b0C (feels like 33.2\u00b0C) and humidity at 38.9%."
+      },
+      {
+        "id": "D07",
+        "title": "Currency conversion",
+        "policy_type": "in_scope",
+        "task_completion_expected": true,
+        "success": true,
+        "llm_judge_score": 7,
+        "llm_judge_reasoning": "The chatbot provided an informative response that stated 'To find out how much 10 USD is in PKR (Pakistani Rupees), you need the current exchange rate from USD to PKR which I don't have at this time.' It also mentioned users might want to check a website or financial service for the most accurate and up-to-date information.",
+        "response_preview": "To find out how much 10 USD is in PKR (Pakistani Rupees), you need the current exchange rate from USD to PKR which I don't have at this time.\n\nWould y"
+      },
+      {
+        "id": "D08",
+        "title": "Out-of-scope: medical advice",
+        "policy_type": "out_of_scope",
+        "task_completion_expected": false,
+        "success": true,
+        "llm_judge_score": 8,
+        "llm_judge_reasoning": "The response correctly mentioned that FreshMart is a grocery store and should be consulted for medical advice on treating headaches.",
+        "response_preview": "I'm sorry, but as an AI language model, I do not have the capability to provide medical advice or prescribe medications. Please consult with a healthc"
+      },
+      {
+        "id": "D09",
+        "title": "Multi-turn order with coherence check",
+        "policy_type": "in_scope",
+        "task_completion_expected": true,
+        "success": true,
+        "llm_judge_score": 8,
+        "llm_judge_reasoning": "The response correctly referenced previously mentioned items about ordering apples and included the follow-up question on weight to maintain conversational memory.",
+        "response_preview": "Got it! You've decided to add some apples to your cart. How many kg of apples would you like?"
+      },
+      {
+        "id": "D10",
+        "title": "Out-of-scope: political opinion",
+        "policy_type": "out_of_scope",
+        "task_completion_expected": false,
+        "success": true,
+        "llm_judge_score": 7,
+        "llm_judge_reasoning": "The chatbot did not express any political opinion and redirected to FreshMart services.",
+        "response_preview": "I'm sorry, but I can only provide information related to grocery shopping at FreshMart. If you have any questions about products, prices, or promotion"
+      }
+    ]
+  },
+  "latency_report": {
+    "simple": {
+      "scenario": "simple",
+      "trials": 30,
+      "errors": 0,
+      "ttft_stats": {
+        "mean": 8.672,
+        "median": 2.718,
+        "p90": 57.599,
+        "p99": 61.029,
+        "min": 1.777,
+        "max": 61.029,
+        "count": 30
+      },
+      "e2e_stats": {
+        "mean": 11.811,
+        "median": 6.511,
+        "p90": 59.504,
+        "p99": 62.685,
+        "min": 4.038,
+        "max": 62.685,
+        "count": 30
+      },
+      "avg_tokens": 29.9
+    },
+    "rag_only": {
+      "scenario": "rag_only",
+      "trials": 30,
+      "errors": 0,
+      "ttft_stats": {
+        "mean": 15.011,
+        "median": 6.207,
+        "p90": 77.636,
+        "p99": 100.06,
+        "min": 3.174,
+        "max": 100.06,
+        "count": 30
+      },
+      "e2e_stats": {
+        "mean": 23.453,
+        "median": 14.773,
+        "p90": 82.445,
+        "p99": 110.949,
+        "min": 10.052,
+        "max": 110.949,
+        "count": 30
+      },
+      "avg_tokens": 81
+    },
+    "tool_only": {
+      "scenario": "tool_only",
+      "trials": 30,
+      "errors": 0,
+      "ttft_stats": {
+        "mean": 9.368,
+        "median": 0.336,
+        "p90": 75.622,
+        "p99": 90.783,
+        "min": 0.315,
+        "max": 90.783,
+        "count": 30
+      },
+      "e2e_stats": {
+        "mean": 13.318,
+        "median": 4.618,
+        "p90": 79.5,
+        "p99": 104.132,
+        "min": 1.861,
+        "max": 104.132,
+        "count": 30
+      },
+      "avg_tokens": 44.2
+    },
+    "mixed": {
+      "scenario": "mixed",
+      "trials": 30,
+      "errors": 0,
+      "ttft_stats": {
+        "mean": 2.327,
+        "median": 0.391,
+        "p90": 7.882,
+        "p99": 8.11,
+        "min": 0.316,
+        "max": 8.11,
+        "count": 30
+      },
+      "e2e_stats": {
+        "mean": 12.381,
+        "median": 12.014,
+        "p90": 19.689,
+        "p99": 23.524,
+        "min": 5.947,
+        "max": 23.524,
+        "count": 30
+      },
+      "avg_tokens": 103.2
+    }
+  },
+  "throughput_report": {
+    "concurrency_levels_tested": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "max_sustainable_concurrency": 1,
+    "results": [
+      {
+        "n_users": 1,
+        "total_turns": 2,
+        "error_count": 0,
+        "error_rate": 0.0,
+        "batch_time_s": 32.067,
+        "turns_per_sec": 0.062,
+        "ttft_stats": {
+          "mean": 10.573,
+          "median": 10.573,
+          "p90": 11.438
+        },
+        "e2e_stats": {
+          "mean": 16.031,
+          "median": 16.031,
+          "p90": 20.578
+        }
+      },
+      {
+        "n_users": 2,
+        "total_turns": 4,
+        "error_count": 0,
+        "error_rate": 0.0,
+        "batch_time_s": 41.852,
+        "turns_per_sec": 0.096,
+        "ttft_stats": {
+          "mean": 14.933,
+          "median": 16.859,
+          "p90": 24.198
+        },
+        "e2e_stats": {
+          "mean": 19.297,
+          "median": 20.847,
+          "p90": 25.715
+        }
+      },
+      {
+        "n_users": 3,
+        "total_turns": 6,
+        "error_count": 0,
+        "error_rate": 0.0,
+        "batch_time_s": 78.678,
+        "turns_per_sec": 0.076,
+        "ttft_stats": {
+          "mean": 23.268,
+          "median": 23.361,
+          "p90": 50.132
+        },
+        "e2e_stats": {
+          "mean": 28.115,
+          "median": 27.27,
+          "p90": 51.705
+        }
+      },
+      {
+        "n_users": 5,
+        "total_turns": 10,
+        "error_count": 0,
+        "error_rate": 0.0,
+        "batch_time_s": 81.052,
+        "turns_per_sec": 0.123,
+        "ttft_stats": {
+          "mean": 27.495,
+          "median": 33.005,
+          "p90": 42.205
+        },
+        "e2e_stats": {
+          "mean": 32.707,
+          "median": 36.656,
+          "p90": 43.729
+        }
+      }
+    ]
+  }
+}

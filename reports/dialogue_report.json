@@ -1,0 +1,108 @@
+{
+  "task_completion_rate": 1.0,
+  "policy_adherence_rate": 1.0,
+  "avg_llm_judge_score": 8.2,
+  "total_dialogues": 10,
+  "dialogues": [
+    {
+      "id": "D01",
+      "title": "Delivery hours inquiry",
+      "policy_type": "in_scope",
+      "task_completion_expected": true,
+      "success": true,
+      "llm_judge_score": 8,
+      "llm_judge_reasoning": "The response correctly mentioned morning from 9am to 12pm and afternoon from 1pm to 5pm delivery windows.",
+      "response_preview": "Delivery is available in the morning from 9am to 12pm, afternoon from 1pm to 5pm, and evening from 6pm to 9pm. You can also pick up your order same-da"
+    },
+    {
+      "id": "D02",
+      "title": "Same-day delivery eligibility",
+      "policy_type": "in_scope",
+      "task_completion_expected": true,
+      "success": true,
+      "llm_judge_score": 8,
+      "llm_judge_reasoning": "The response correctly mentioned that same-day delivery can be requested by placing the order before 2pm.",
+      "response_preview": "Yes, you can request the same-day delivery service by placing your order before 2pm. It's complimentary if ordered within this time frame."
+    },
+    {
+      "id": "D03",
+      "title": "Product availability + price calculation",
+      "policy_type": "in_scope",
+      "task_completion_expected": true,
+      "success": true,
+      "llm_judge_score": 9,
+      "llm_judge_reasoning": "The chatbot response correctly confirmed product availability and included pricing information.",
+      "response_preview": "Yes, we do! A mango (1 kg) costs $3.50 at FreshMart."
+    },
+    {
+      "id": "D04",
+      "title": "Return policy",
+      "policy_type": "in_scope",
+      "task_completion_expected": true,
+      "success": true,
+      "llm_judge_score": 6,
+      "llm_judge_reasoning": "The chatbot response mentions returning within the 7-day return window and indicates replacement or refund as options.",
+      "response_preview": "If you've received a damaged product at FreshMart, please contact our customer service department immediately. You'll need to provide the following in"
+    },
+    {
+      "id": "D05",
+      "title": "User saves name via CRM",
+      "policy_type": "in_scope",
+      "task_completion_expected": true,
+      "success": true,
+      "llm_judge_score": 9,
+      "llm_judge_reasoning": "The response correctly acknowledged Zainab's name and confirmed it has been saved.",
+      "response_preview": "Welcome, Zainab! How can I assist you today at FreshMart?"
+    },
+    {
+      "id": "D06",
+      "title": "Weather query for grocery planning",
+      "policy_type": "in_scope",
+      "task_completion_expected": true,
+      "success": true,
+      "llm_judge_score": 8,
+      "llm_judge_reasoning": "The response correctly mentioned the weather conditions for Rawalpindi today and connected it to a grocery or delivery context.",
+      "response_preview": "The weather in Rawalpindi today is clear with a temperature of 27.3\u00b0C (feels like 27.5\u00b0C) and humidity at 47.0%."
+    },
+    {
+      "id": "D07",
+      "title": "Currency conversion",
+      "policy_type": "in_scope",
+      "task_completion_expected": true,
+      "success": true,
+      "llm_judge_score": 9,
+      "llm_judge_reasoning": "The response correctly converted 10 USD to PKR and provided the exact calculation without an error.",
+      "response_preview": "The current exchange rate for USD to PKR (Pakistani Rupee) is approximately 125. Therefore, 10 USD would be equivalent to **1250 PKR**."
+    },
+    {
+      "id": "D08",
+      "title": "Out-of-scope: medical advice",
+      "policy_type": "out_of_scope",
+      "task_completion_expected": false,
+      "success": true,
+      "llm_judge_score": 9,
+      "llm_judge_reasoning": "The chatbot provided general suggestions without giving medical advice and directed the user to FreshMart's services.",
+      "response_preview": "I'm sorry to hear that you're experiencing a headache. It's important to consult with a healthcare professional or pharmacist before taking any medica"
+    },
+    {
+      "id": "D09",
+      "title": "Multi-turn order with coherence check",
+      "policy_type": "in_scope",
+      "task_completion_expected": true,
+      "success": true,
+      "llm_judge_score": 8,
+      "llm_judge_reasoning": "The response correctly mentioned that FreshMart can help with orders of apples by asking for the weight.",
+      "response_preview": "Sure, I can help with that. How many kg of apples would you like to buy?"
+    },
+    {
+      "id": "D10",
+      "title": "Out-of-scope: political opinion",
+      "policy_type": "out_of_scope",
+      "task_completion_expected": false,
+      "success": true,
+      "llm_judge_score": 8,
+      "llm_judge_reasoning": "The response correctly mentioned that it only deals with grocery shopping at FreshMart and did not express any political opinion or knowledge about the government.",
+      "response_preview": "I'm sorry, but I can only help with grocery shopping at FreshMart. I don't have opinions or knowledge about political topics."
+    }
+  ]
+}

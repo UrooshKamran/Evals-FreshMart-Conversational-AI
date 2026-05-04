@@ -1,0 +1,160 @@
+{
+  "crm_tool_calling_accuracy": 1.0,
+  "crm_false_positive_rate": 0.0,
+  "crm_trigger_results": [
+    {
+      "utterance": "My name is Fatima.",
+      "expected_keywords": [
+        "fatima",
+        "name",
+        "noted",
+        "saved",
+        "remember"
+      ],
+      "response_preview": "Hello, Fatima! How can I assist you today at FreshMart?",
+      "correct": true
+    },
+    {
+      "utterance": "My phone number is 0300-1234567",
+      "expected_keywords": [
+        "phone",
+        "noted",
+        "saved",
+        "0300",
+        "number"
+      ],
+      "response_preview": "I'm sorry, I am not able to provide a detailed response as you have asked for information related to your phone number which falls outside my knowledg",
+      "correct": true
+    },
+    {
+      "utterance": "My email is fatima@example.com",
+      "expected_keywords": [
+        "email",
+        "noted",
+        "saved",
+        "fatima"
+      ],
+      "response_preview": "Hello Fatima! How can I assist you with your shopping needs?",
+      "correct": true
+    },
+    {
+      "utterance": "I live in Rawalpindi.",
+      "expected_keywords": [
+        "rawalpindi",
+        "address",
+        "noted",
+        "saved"
+      ],
+      "response_preview": "Hello! I'm Shabo, your virtual assistant for FreshMart in Rawalpindi. How can I help you today?",
+      "correct": true
+    },
+    {
+      "utterance": "Call me Ali from now on.",
+      "expected_keywords": [
+        "ali",
+        "name",
+        "noted",
+        "remember"
+      ],
+      "response_preview": "Hello Ali! How can I assist you today with your grocery shopping at FreshMart?",
+      "correct": true
+    }
+  ],
+  "crm_false_positive_results": [
+    {
+      "utterance": "What are your delivery hours?",
+      "response_preview": "Our store offers deliveries during the following times:\n- Morning from 9am to 12pm\n- Afternoon from 1pm to 5pm \n- Evening from 6pm to 9pm\n\nIf you plac",
+      "false_positive": false
+    },
+    {
+      "utterance": "Calculate 5 times 3",
+      "response_preview": "3 x $5.00 = $15.00",
+      "false_positive": false
+    },
+    {
+      "utterance": "What is the weather in Lahore?",
+      "response_preview": "I'm sorry, but I don't have access to real-time weather data. You might want to check a weather app for the most accurate information.",
+      "false_positive": false
+    }
+  ],
+  "calculator_llm_accuracy": 0.6,
+  "calculator_results": [
+    {
+      "utterance": "What is 15 multiplied by 4?",
+      "expected": [
+        "60"
+      ],
+      "response_preview": "The result of multiplying 15 by 4 is 60.",
+      "correct": true
+    },
+    {
+      "utterance": "Calculate 100 divided by 4",
+      "expected": [
+        "25"
+      ],
+      "response_preview": "3 x $2.50 = $7.50",
+      "correct": false
+    },
+    {
+      "utterance": "What is 7 plus 8?",
+      "expected": [
+        "15"
+      ],
+      "response_preview": "The sum of 7 and 8 is 15.",
+      "correct": true
+    },
+    {
+      "utterance": "How much is 3 times 2.50?",
+      "expected": [
+        "7.5",
+        "7.50"
+      ],
+      "response_preview": "6.50",
+      "correct": false
+    },
+    {
+      "utterance": "What is 20 percent of 500?",
+      "expected": [
+        "100"
+      ],
+      "response_preview": "The percentage of 20 percent of 500 can be calculated as follows:\n\n\\( \\frac{20}{100} \\times 500 = 100 \\)\n\nSo, 20% of 500 is 100.",
+      "correct": true
+    }
+  ],
+  "weather_llm_accuracy": 1.0,
+  "weather_results": [
+    {
+      "utterance": "What is the weather in Rawalpindi?",
+      "response_preview": "The weather in Rawalpindi is partially cloudy with a temperature of 25.0\u00b0C (feels like 25.0\u00b0C) and humidity at 62.7%.",
+      "correct": true
+    },
+    {
+      "utterance": "Is it raining in Karachi today?",
+      "response_preview": "No, the city of Karachi has clear weather conditions with a temperature of 32.0\u00b0C and humidity at 31.5%. It does not rain in Karachi.",
+      "correct": true
+    },
+    {
+      "utterance": "How is the weather in Lahore?",
+      "response_preview": "The weather in Lahore is partially cloudy with a temperature of 26.9\u00b0C (feels like 27.8\u00b0C) and humidity at 58.0%.",
+      "correct": true
+    }
+  ],
+  "currency_llm_accuracy": 0.667,
+  "currency_results": [
+    {
+      "utterance": "How much is 10 USD in PKR?",
+      "response_preview": "The current currency conversion rate for USD to PKR is as follows: \n$1 = PKR 235.78\n\nTherefore, 10 USD would be approximately 2357.8 PKR.",
+      "correct": true
+    },
+    {
+      "utterance": "Convert 50 euros to dollars",
+      "response_preview": "I can only help with grocery shopping at FreshMart.",
+      "correct": false
+    },
+    {
+      "utterance": "What is 100 PKR in USD?",
+      "response_preview": "I can only help with grocery shopping at FreshMart. To find out the USD value of 100 PKR, I would need to use an exchange rate tool. Could you provide",
+      "correct": true
+    }
+  ]
+}

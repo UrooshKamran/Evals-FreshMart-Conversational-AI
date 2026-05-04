@@ -1,0 +1,127 @@
+{
+  "hardware": {
+    "os": "Windows 11",
+    "cpu_cores": 8,
+    "ram_gb": 15.8,
+    "python": "3.14.3",
+    "model": "qwen2.5:1.5b (CPU quantised)"
+  },
+  "thresholds": {
+    "max_median_ttft_s": 15.0,
+    "max_median_e2e_s": 60.0
+  },
+  "concurrency_levels_tested": [
+    1,
+    2,
+    3,
+    5,
+    10
+  ],
+  "messages_per_user": 3,
+  "max_sustainable_concurrency": 2,
+  "breakpoint_concurrency": 2,
+  "tps_at_sustainable": 0.155,
+  "results": [
+    {
+      "n_users": 1,
+      "total_turns": 3,
+      "error_count": 0,
+      "error_rate": 0.0,
+      "batch_time_s": 23.73,
+      "turns_per_sec": 0.126,
+      "ttft_stats": {
+        "mean": 4.391,
+        "median": 5.637,
+        "p90": 7.23,
+        "p99": 7.23
+      },
+      "e2e_stats": {
+        "mean": 7.908,
+        "median": 6.931,
+        "p90": 10.364,
+        "p99": 10.364
+      }
+    },
+    {
+      "n_users": 2,
+      "total_turns": 6,
+      "error_count": 0,
+      "error_rate": 0.0,
+      "batch_time_s": 38.627,
+      "turns_per_sec": 0.155,
+      "ttft_stats": {
+        "mean": 8.546,
+        "median": 10.242,
+        "p90": 14.291,
+        "p99": 14.291
+      },
+      "e2e_stats": {
+        "mean": 11.653,
+        "median": 12.659,
+        "p90": 15.483,
+        "p99": 15.483
+      }
+    },
+    {
+      "n_users": 3,
+      "total_turns": 9,
+      "error_count": 0,
+      "error_rate": 0.0,
+      "batch_time_s": 62.074,
+      "turns_per_sec": 0.145,
+      "ttft_stats": {
+        "mean": 13.473,
+        "median": 15.157,
+        "p90": 20.183,
+        "p99": 20.183
+      },
+      "e2e_stats": {
+        "mean": 17.237,
+        "median": 17.121,
+        "p90": 27.851,
+        "p99": 27.851
+      }
+    },
+    {
+      "n_users": 5,
+      "total_turns": 15,
+      "error_count": 0,
+      "error_rate": 0.0,
+      "batch_time_s": 94.43,
+      "turns_per_sec": 0.159,
+      "ttft_stats": {
+        "mean": 22.305,
+        "median": 23.488,
+        "p90": 30.352,
+        "p99": 31.613
+      },
+      "e2e_stats": {
+        "mean": 25.843,
+        "median": 27.33,
+        "p90": 32.077,
+        "p99": 37.649
+      }
+    },
+    {
+      "n_users": 10,
+      "total_turns": 30,
+      "error_count": 0,
+      "error_rate": 0.0,
+      "batch_time_s": 221.116,
+      "turns_per_sec": 0.136,
+      "ttft_stats": {
+        "mean": 54.641,
+        "median": 55.892,
+        "p90": 89.797,
+        "p99": 99.182
+      },
+      "e2e_stats": {
+        "mean": 58.624,
+        "median": 58.03,
+        "p90": 92.308,
+        "p99": 100.528
+      }
+    }
+  ],
+  "comparison_table": "\n## Throughput Concurrency Table\n\n| Users | TPS | TTFT med | TTFT p90 | TTFT p99 | E2E med | E2E p90 | Errors | Sustainable |\n|---|---|---|---|---|---|---|---|---|\n| 1 | 0.13 | 5.637s | 7.23s | 7.23s | 6.931s | 10.364s | 0% | \u2705 |\n| 2 | 0.15 | 10.242s | 14.291s | 14.291s | 12.659s | 15.483s | 0% | \u2705 \u2190 breakpoint |\n| 3 | 0.14 | 15.157s | 20.183s | 20.183s | 17.121s | 27.851s | 0% | \u274c |\n| 5 | 0.16 | 23.488s | 30.352s | 31.613s | 27.33s | 32.077s | 0% | \u274c |\n| 10 | 0.14 | 55.892s | 89.797s | 99.182s | 58.03s | 92.308s | 0% | \u274c |\n"
+}
